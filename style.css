@@ -1,0 +1,310 @@
+header
+   {
+      position: fixed;
+       height: absolute;
+       width:100%;
+       background-color: #000;
+       overflow: hidden;
+       top: 0px;
+       z-index: 1;
+     
+       
+   }
+   /*-----------------------------------------responsive-------------------------------------------------------*/
+ .row::after{
+    content: " ";
+    clear: both;
+    display:table;
+}
+/*For Mobile Phone:*/
+[class*="col-"]{
+   width: 100%;
+};
+
+@media only screen and (max-width:600px)
+{
+   /*for tablets;*/
+   .col-s-1{width: 8.33% ;}
+   .col-s-2{width: 16%;}
+   .col-s-3{width: 25%;}
+   .col-s-4{width: 33.33% ;}
+   .col-s-5{width: 41.66% ;}
+   .col-s-6{width: 50%;}
+   .col-s-7{width: 58.33%;}
+   .col-s-8{width: 66.66%;}
+   .col-s-9{width: 75% ;}
+   .col-s-10{width: 83.33%;}
+   .col-s-11{width: 91.06%;}
+   .col-s-12{width: 100%;}
+}
+@media only screen and (min-width:780px)
+{
+   /*for Desktop;*/
+   .col-1{width: 8.33%;}
+   .col-2{width: 16%;}
+   .col-3{width: 25%;}
+   .col-4{width: 33.33% ;}
+   .col-5{width: 41.66% ;}
+   .col-6{width: 50%;}
+   .col-7{width: 58.33%;}
+   .col-8{width: 66.66%;}
+   .col-9{width: 75%;}
+   .col-10{width:  83.33%;}
+   .col-11{width: 91.06% ;}
+   .col-12{width:  100%;}
+}
+[class*="col-"]{
+   float: left;
+   padding: 5px;
+}
+   .profile{
+       background:rgb(27, 2, 14) ;
+   }
+   .logo
+  {
+    width: 200px;
+    height: 50px;
+    float: left;
+
+  }
+  .logo img
+  {
+      padding-left:50px ;
+      
+     
+  }
+   
+  body .image
+   {
+       height:640px ;
+       width:100%;
+       background-color: gray;
+
+   }
+   a:link, a:visited {
+	font-family:	Constantia;
+    border-color:	red;
+    color: 			white;
+    padding: 		14px 25px;
+    text-align: 	center;
+    text-decoration: none;
+    display: 		inline-block;
+}
+a:link {
+    
+    text-decoration: 	none;
+	border:				1px;
+	border-bottom-color:green;
+}
+
+a:visited {
+    text-decoration: 	none;
+	font-size:			30px;
+}
+
+a:hover {
+    font-size:			30px;
+	background-color:	lightgrey;
+	color:				red;
+}
+
+a.active{
+    text-decoration:none;
+    font-size:20px;
+    color:purple;
+    font-weight:bold;
+    }
+
+   
+   
+   .icon .glyphicon
+   {
+   background-color: #000;
+   color:#fff;
+   width: 42px;
+   height:42px;
+   text-align: center;
+   line-height: 42px;
+   border-radius:50%;
+   margin-right: 8px;
+   }
+   body .image
+   {
+    margin-top:0px;
+     
+       text-align: center;
+       color: #000;
+       font-family: sans-serif;
+       background-image:url("img/home.jpg");
+       background-size:cover;
+       background-position:center;
+   }
+   /*-------------------------footer------------------------------------*/
+.footter{
+    text-align: center;
+  background:#0f0101e5;
+    
+   
+}
+
+  
+   /*-----------------------------------image for about----------------------------*/
+   .history{
+    background: #33b5e5;
+    padding: 15px;
+    text-align: center;
+   }
+   
+   .ic ul {
+    margin: 0px;
+    padding: 0px;
+}
+.ic li{
+ display: inline;
+ margin: 6px;
+ list-style:none;
+}
+.ic li a{
+ color: white;
+ text-decoration: none;
+ font-size: 60px;
+ transition: all ease-in-out 250ms;
+}
+.ic li a:hover{
+    color: rgb(137, 130, 238);
+}
+
+.body
+{
+    background-color: #637548;;
+}
+/*--------------------------------/*----------------gallary ------------------------------------------------------------*/
+.gallarybox
+{
+    height: 1000px;
+ 
+    width: 100%;
+    background-color: #170606;
+    margin:100px auto;
+    opacity:0.9 ;
+    color: white;
+ 
+}
+body .gallary
+{
+    height:1240px ;
+    width:100%;
+    background-color: gray;
+
+}
+body .gallary
+{
+ margin-top:0px;
+  
+    text-align: center;
+    color: #000;
+    font-family: sans-serif;
+    background-image:url("img/gaallary.jpg");
+    background-size:cover;
+    background-position:center;
+}
+/*--------------------------------/*----------------contact ------------------------------------------------------------*/
+/* fn--------------------------------------------hobyy*/
+.hobbysection
+{
+    height: 950px;  
+    width: 100%;
+    background-color: #140303;
+    margin:100px auto;
+    color: white;
+}
+body .body
+{
+ margin-top:0px;
+  
+    text-align: center;
+    color: #000;
+    font-family: sans-serif;
+    background-image:url("img/contact1.jpg");
+    background-size:cover;
+    background-position:center;
+}
+body{
+    background-color:red;
+}
+ /*-------------------------------------------------Home Page for aaboute-----------------------------------------------------*/
+
+
+
+
+ 
+/*------------------animation    -----------------*/
+
+/*---------------------bubbles- animation---------------------*/
+.bubble img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+
+
+}
+.bubble{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+}
+@keyframes bubble{
+    0%{
+        transform: translatey(0);
+        opacity: 0;
+    }
+
+        50%{
+            
+            opacity:1;
+        }
+      
+            75%{
+                
+                opacity: 1;
+            }
+          
+                100%{
+                    transform: translatey(-80vh);
+                    opacity: 1;
+                }
+            }
+.bubble img:nth-child(1){
+    animation-delay: 1s;
+
+}
+.bubble img:nth-child(2){
+    animation-delay: 4s;
+
+}
+.bubble img:nth-child(3){
+    animation-delay: 3s;
+
+}
+.bubble img:nth-child(4){
+    animation-delay: 1s;
+
+}
+.bubble img:nth-child(5){
+    animation-delay: 2s;
+
+}
+.bubble img:nth-child(6){
+    animation-delay: 1s;
+
+}
+.bubble img:nth-child(7){
+    animation-delay: 4s;
+
+}
+.bubble img:nth-child(8){
+    animation-delay: 1s;
+
+}

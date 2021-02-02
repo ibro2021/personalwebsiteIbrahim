@@ -1,0 +1,13 @@
+nav
+{
+width: 700px;
+float: right;
+word-spacing: 30px;
+padding: 20px;
+
+}
+nav li
+{
+display: block;
+line-height: 40px;
+}
